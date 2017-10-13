@@ -66,6 +66,10 @@ func mulArray(nums: [Int?]?) -> Int {
     return result
 }
 
+func mathOperationArray(funcName: ([Int?]?) -> Int, array: [Int?]?) -> Int? {
+    return funcName(array)
+}
+
 func countArray(nums: [Int?]?) -> Int {
     if let numsArray = nums {
         return numsArray.count
